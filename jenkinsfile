@@ -4,6 +4,7 @@ pipeline {
         stage('SCM') {
             steps {
                 git url: 'https://github.com/chandumca07/spring-petclinic.git'
+                 branch: 'main'
             }
         }
         stage('build && SonarQube analysis') {
