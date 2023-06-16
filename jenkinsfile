@@ -15,6 +15,7 @@ pipeline {
             tools {
                 jdk 'JDK_17'
             }
+        }
         stage('sonar analysis') {
             steps {
                 // performing sonarqube analysis with "withSonarQubeENV(<Name of Server configured in Jenkins>)"
